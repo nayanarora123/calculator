@@ -70,6 +70,38 @@ button:hover{
     color: white;
 }
 
+@media screen and (max-width: 700px) {
+    .calculator{
+        display: grid;
+        justify-content:center; 
+        align-content: center;
+        min-height: 100vh;
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: minmax(80px, auto) repeat(5, 60px);
+    }
+
+    .output .previous-operand {
+        color: white;
+        opacity: 0.7;
+        font-size: 0.9rem;
+    }
+    
+    .output .current-operand {
+        color: white;
+        font-size: 1.1rem;
+    }
+    button {
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.80);
+    }
+
+}
+
+
+
 /* .calculator {
     width: 400px;
     max-height: auto;
